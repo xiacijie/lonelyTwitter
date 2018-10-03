@@ -47,6 +47,13 @@ public class LonelyTwitterActivity extends Activity {
 	}
 
 	@Override
+	/**
+	 * Start the activity
+	 * @param
+	 * @return
+	 * @throws
+	 *
+	 */
 	protected void onStart() {
 		// TODO Auto-generated method stub
 		super.onStart();
@@ -83,7 +90,13 @@ public class LonelyTwitterActivity extends Activity {
 		}
 		return tweets.toArray(new String[tweets.size()]);
 	}
-	
+	/**
+	 * Save the file
+	 * @param
+	 * @return
+	 * @throws Exception
+	 *
+	 */
 	private void saveInFile(String text, Date date) {
 		try {
 			FileOutputStream fos = openFileOutput(FILENAME,
