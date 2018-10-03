@@ -56,6 +56,13 @@ public class LonelyTwitterActivity extends Activity {
 		oldTweetsList.setAdapter(adapter);
 	}
 
+	/**
+	 * Load from files
+	 * @param
+	 * @return
+	 * @throws Exception
+	 *
+	 */
 	private String[] loadFromFile() {
 		ArrayList<String> tweets = new ArrayList<String>();
 		try {
