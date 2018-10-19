@@ -40,4 +40,20 @@ public class TweetListTest extends ActivityInstrumentationTestCase2 {
         assertEquals(returnedTweet.getMessage(),tweet.getMessage());
         assertEquals(returnedTweet.getDate(),tweet.getDate());
     }
+
+
+    public void testGetTweets(){
+        TweetList tweets = new TweetList();
+        Tweet tweet = new NormalTweet("Tweet");
+        tweets.addTweet(tweet);
+
+
+    }
+    
+    public void testGetCount(){
+        TweetList tweets = new TweetList();
+        Tweet tweet = new NormalTweet("Tweet");
+        tweets.addTweet(tweet);
+        assertEquals(tweets.getCount(),1);
+    }
 }

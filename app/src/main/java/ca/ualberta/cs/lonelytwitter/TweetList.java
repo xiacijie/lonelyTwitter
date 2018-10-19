@@ -21,5 +21,16 @@ public class TweetList {
         return tweets.get(index);
     }
 
+    public ArrayList<Tweet> getTweets(){
+        return tweets;
+    }
+
+
+    public int getCount(){
+        return tweets.size();
+    }
+
+
+
 
 }
